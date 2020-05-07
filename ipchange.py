@@ -12,12 +12,7 @@ os.system("apt install figlet")
 banner()
 os.system("apt update")
 banner()
-op=str(input("Did you already install all requirements(Y/n) :"))
-if((op=="N") or (op=="n")):
- banner()
- os.system("cd core && bash setup.sh")
-else:
- pass
+os.system("cd core && bash setup.sh")
 banner()
 op=str(input("Did you already initialize it(Y/n) :"))
 if((op=="N") or (op=="n")):
